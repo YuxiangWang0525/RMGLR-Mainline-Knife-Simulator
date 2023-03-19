@@ -1,3 +1,4 @@
+<!--代码版权归属YuxiangWang_0525© - yuxiangwang0525.com 2022 保留所有权利-->
 <html>
 <head>
 <title>米哈游是怎么做到抹除大慈树王的存在的</title>
@@ -10,27 +11,27 @@
 <a href="javascript:returnmp();">前代草神是谁?</a>
 <a id="mlink" href="javascript:mainline();">做主线任务</a>
 <script id="js-code">
-var name="大慈树王";
-var display1 = document.getElementById("titleh");
+var name="大慈树王"; //初始赋值为“大慈树王”
+var display1 = document.getElementById("titleh"); //这两行是获得对象ID,预报赋值
 var display2 = document.getElementById("maindialog");
-display1.innerText=name;
+display1.innerText=name;//刷新标签文字为变量name(大慈树王)
 display2.innerText=name;
 
-function returnmp() {
-  alert ("前代草神是"+name);
+function returnmp() { //创建returnmp方法,访问者点击“前代草神是谁”的链接时调用此方法
+  alert ("前代草神是"+name);//弹出警告框,输出文字和变量(如未执行mainline方法【也就是没做主线,这里返回的是大慈树王,否则返回四个乱码符)
 }
 
-function mainline() {
+function mainline() {//创建mainline方法 访问者点击“做主线任务”的链接时调用此方法
   alert("你与纳西妲一起与世界树建立连接，见到了和纳西妲长相完全一致的前代草神--大慈树王。大慈树王讲述了自己为什么要折下纯净的世界树树枝创造纳西妲并指引她来到这里：大慈树王想要让小草神纳西妲亲手将自己从世界树中抹除。在极不情愿的情况下，纳西妲含着泪水抹除了大慈树王的存在……\n \"我们都栖息在智慧之树下，尝试阅读世界，从土中读、从雨中读，尔后化身白鸟攀上枝头...终于衔住了至关重要的那一片树叶。 曾经，我是世上唯一能够做梦的个体。在我的梦里，所有人入夜后也都会进入梦乡。人们的脑海中飘出奇思异想，有些滚落地面，有些浮到天上。它将所有事物连接成一片万分夺目的网。三千个世界，更小的世界，所有命运，皆在此间沸腾。我逐渐明白，这些不可被描述而又永久变化之物，才是世间最深奥的东西。唯有它们，才能彻底驱逐那些疯狂。唯有梦，才能将意识从最深沉的黑暗中唤醒。我乃命题之人，亦是求解之人。以世人之梦挽救世界，曾是属于我的答案。\"\n");
-  alert("而今，你们也寻到了属于自己的答案");
+  alert("而今，你们也寻到了属于自己的答案");//四个警告框展示剧情
   alert("我会将所有的梦归还世人。");
   alert("须弥的子民啊，再见了，愿你们今晚得享美梦。");
-  var rmlink = document.getElementById('mlink');
-  rmlink.remove();
-  name = "■■■■";
-  display1.innerText = name;
+  var rmlink = document.getElementById('mlink');//获取“做主线任务”链接对象
+  rmlink.remove();//移除链接“做主线任务”
+  name = "■■■■";//将名字由“大慈树王”更改赋值为四个乱码符
+  display1.innerText = name;//刷新两个标签
   display2.innerText = name;
-  document.title = '米哈游是怎么做到抹除' + name + '的存在的';
+  document.title = '米哈游是怎么做到抹除' + name + '的存在的';//刷新标题
 } 
 
 window.QPlayer.list = [
@@ -41,7 +42,7 @@ window.QPlayer.list = [
         "cover": "https://api.i-meto.com/meting/api?server=netease&type=pic&id=109951168232666774&auth=7ddd6c3064a596bed8cc2ef8a050a6270cdc20af",
         "lrc": "https://api.i-meto.com/meting/api?server=netease&type=lrc&id=2014336709&auth=aa1f72b519e68e6e362a12d902543291ff2202c0"
     }
-];
+];//备用QPlayer 暂未使用
 
 </script>
 </body>
